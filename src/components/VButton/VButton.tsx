@@ -1,5 +1,6 @@
-import { ReactNode } from 'react';
-import { Wrapper } from './VButton.styles';
+import { MouseEvent, ReactNode } from "react";
+
+import { Base } from "./VButton.styles";
 
 interface Props {
   children: ReactNode;
@@ -10,7 +11,7 @@ interface Props {
   /**
    * Optional click handler
    */
-  onClick?: () => void;
+  onClick?: (evt: MouseEvent) => void;
   [x: string]: any;
 }
 
@@ -19,12 +20,13 @@ interface Props {
  */
 const VButton = ({ children, isPrimary, onClick, ...rest }: Props) => {
   return (
-    <Wrapper
-      className={isPrimary ? 'is_primary' : undefined}
+    <Base
+      className={isPrimary ? "is_primary" : undefined}
       onClick={onClick}
-      {...rest}>
+      {...rest}
+    >
       {children}
-    </Wrapper>
+    </Base>
   );
 };
 

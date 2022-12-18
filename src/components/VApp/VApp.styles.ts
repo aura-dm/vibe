@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: ${({ theme }) => theme.fonts.primary}
+    font-family: ${({ theme }) => theme.fontFamily.primary}
   }
 
   a, button {
@@ -38,6 +38,7 @@ export const GlobalStyles = createGlobalStyle`
 
   input, textarea {
       -webkit-user-select: auto;
+      user-select: auto;
   }
 
   textarea {
@@ -62,7 +63,9 @@ export const GlobalStyles = createGlobalStyle`
       -webkit-user-modify: read-write;
       overflow-wrap: break-word;
       -webkit-line-break: after-white-space;
+    line-break: after-white-space;
       -webkit-user-select: auto;
+    user-select: auto;
   }
 
   :where([draggable="true"]) {

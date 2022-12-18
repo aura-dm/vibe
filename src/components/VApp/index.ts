@@ -1,3 +1,3 @@
-import VApp from './VApp';
+import VApp from "./VApp";
 
 export default VApp;

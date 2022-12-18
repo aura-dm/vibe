@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   color: #000000;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   &.h4,
   &.h5,
   &.h6 {
-    font-family: 'Questrial', sans-serif;
+    font-family: "Questrial", sans-serif;
     font-weight: 400;
     line-height: 1.3;
     margin: 3rem 0 1.38rem;

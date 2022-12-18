@@ -1,11 +1,12 @@
-import { ReactNode } from 'react';
-import { DefaultTheme, ThemeProvider } from 'styled-components';
-import defaultTheme from '../../themes/defaultTheme';
-import { GlobalStyles } from './VApp.styles';
+import { ReactNode } from "react";
+import { DefaultTheme, ThemeProvider } from "styled-components";
+
+import defaultTheme from "../../themes/default/defaultTheme";
+import { GlobalStyles } from "./VApp.styles";
 
 interface Props {
   children: ReactNode;
-  theme: DefaultTheme;
+  theme?: DefaultTheme;
 }
 
 /**

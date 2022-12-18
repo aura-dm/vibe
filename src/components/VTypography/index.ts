@@ -1,3 +1,3 @@
-import VTypography from './VTypography';
+import VTypography from "./VTypography";
 
 export default VTypography;
