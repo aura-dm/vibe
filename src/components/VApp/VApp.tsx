@@ -13,6 +13,7 @@ interface Props {
  * App container that provides theming and other functionality
  */
 const VTypography = ({ children, theme = defaultTheme }: Props) => {
+  console.log(theme);
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />

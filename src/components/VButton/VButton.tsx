@@ -12,16 +12,26 @@ interface Props {
    * Optional click handler
    */
   onClick?: (evt: MouseEvent) => void;
+  /**
+   * Style of button
+   */
+  variant?: "contained" | "outlined" | "text";
   [x: string]: any;
 }
 
 /**
  * Primary UI component for user interaction
  */
-const VButton = ({ children, isPrimary, onClick, ...rest }: Props) => {
+const VButton = ({
+  children,
+  isPrimary,
+  onClick,
+  variant = "contained",
+  ...rest
+}: Props) => {
   return (
     <Base
-      className={isPrimary ? "is_primary" : undefined}
+      className={[isPrimary ? "is_primary" : undefined, variant].join(" ")}
       onClick={onClick}
       {...rest}
     >

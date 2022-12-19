@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 
-import colors from "../colors";
-import fontFamily from "../fontFamily";
+import colors from "../../themes/default/colors";
+import fontFamily from "../../themes/default/fontFamily";
 
 const ButtonTheme = {
   base: css`

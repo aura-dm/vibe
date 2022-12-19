@@ -44,6 +44,9 @@ declare module "styled-components" {
         input: ThemedCssFunction;
         label: ThemedCssFunction;
       };
+      toolbar: {
+        base: ThemedCssFunction;
+      };
     };
   }
 }

@@ -1,8 +1,8 @@
 import { css } from "styled-components";
 
-import colors from "../colors";
-import fontFamily from "../fontFamily";
-import fontSize from "../fontSize";
+import colors from "../../themes/default/colors";
+import fontFamily from "../../themes/default/fontFamily";
+import fontSize from "../../themes/default/fontSize";
 
 const TextFieldTheme = {
   base: css`
@@ -18,6 +18,10 @@ const TextFieldTheme = {
     font-size: ${fontSize.body[0]};
     line-height: ${fontSize.body[1]};
     padding: 4px 8px;
+
+    &::placeholder {
+      color: ${colors.text.c200};
+    }
 
     &:hover {
       border: 1px solid ${colors.surface.c300};

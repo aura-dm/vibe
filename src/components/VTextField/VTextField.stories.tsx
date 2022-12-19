@@ -22,3 +22,9 @@ WithLabel.args = {
   labelId: "input-label",
   onChange: (evt) => console.log(evt),
 };
+
+export const WithPlaceholder = Template.bind({});
+WithPlaceholder.args = {
+  onChange: (evt) => console.log(evt),
+  placeholder: "Start typing...",
+};
