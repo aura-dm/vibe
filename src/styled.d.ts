@@ -22,19 +22,6 @@ declare module "styled-components" {
       };
       transparent: string;
     };
-    fontFamily: {
-      primary: string;
-    };
-    fontSize: {
-      xs: string[];
-      sm: string[];
-      body: string[];
-      h5: string[];
-      h4: string[];
-      h3: string[];
-      h2: string[];
-      h1: string[];
-    };
     components: {
       button: {
         base: ThemedCssFunction;
@@ -47,6 +34,24 @@ declare module "styled-components" {
       toolbar: {
         base: ThemedCssFunction;
       };
+      typography: {
+        base: ThemedCssFunction;
+      };
     };
+    fontFamily: {
+      primary: string;
+      secondary: string;
+    };
+    fontSize: {
+      body: string[];
+      h1: string[];
+      h2: string[];
+      h3: string[];
+      h4: string[];
+      h5: string[];
+      small: string[];
+      subtitle: string[];
+    };
+    spacing: (value: number) => string;
   }
 }

@@ -24,6 +24,10 @@ interface Props {
    */
   placeholder?: string;
   /**
+   * Input type. i.e. text, password, email.
+   */
+  type?: string;
+  /**
    * Value to be displayed. `onChange` handler is required if value is set.
    */
   value?: string;
@@ -39,6 +43,7 @@ const VTextField = ({
   name,
   onChange,
   placeholder,
+  type = "text",
   value,
   ...rest
 }: Props) => {
@@ -50,6 +55,7 @@ const VTextField = ({
         name={name}
         onChange={onChange}
         placeholder={placeholder}
+        type={type}
         value={value}
       />
     </Base>

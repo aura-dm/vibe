@@ -13,12 +13,12 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   body {
     font-family: ${({ theme }) => theme.fontFamily.primary};
-    font-size: 14px;
+    font-size: 16px;
   }
 
   a, button {

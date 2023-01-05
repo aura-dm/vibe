@@ -1,17 +1,18 @@
 import { css } from "styled-components";
 
-import colors from "../../themes/default/colors";
+import colors from "../../themes/default/tokens/colors";
+import spacing from "../../themes/default/tokens/spacing";
 
-const ToolbarTheme = {
+const toolbarTheme = {
   base: css`
     align-items: center;
     border-bottom: 1px solid ${colors.surface.c200};
     display: flex;
-    height: 50px;
+    height: ${spacing(12)};
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 ${spacing(5)};
     width: 100%;
   `,
 };
 
-export default ToolbarTheme;
+export default toolbarTheme;

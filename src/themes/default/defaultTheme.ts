@@ -1,21 +1,25 @@
 import { DefaultTheme } from "styled-components";
 
-import ButtonTheme from "../../components/VButton/VButton.theme";
-import TextFieldTheme from "../../components/VTextField/VTextField.theme";
-import ToolbarTheme from "../../components/VToolbar/VToolbar.theme";
-import colors from "./colors";
-import fontFamily from "./fontFamily";
-import fontSize from "./fontSize";
+import buttonTheme from "../../components/VButton/VButton.theme";
+import textFieldTheme from "../../components/VTextField/VTextField.theme";
+import toolbarTheme from "../../components/VToolbar/VToolbar.theme";
+import typographyTheme from "../../components/VTypography/VTypography.theme";
+import colors from "./tokens/colors";
+import fontFamily from "./tokens/fontFamily";
+import fontSize from "./tokens/fontSize";
+import spacing from "./tokens/spacing";
 
 const defaultTheme: DefaultTheme = {
   colors,
+  components: {
+    button: buttonTheme,
+    textField: textFieldTheme,
+    toolbar: toolbarTheme,
+    typography: typographyTheme,
+  },
   fontFamily,
   fontSize,
-  components: {
-    button: ButtonTheme,
-    textField: TextFieldTheme,
-    toolbar: ToolbarTheme,
-  },
+  spacing,
 };
 
 export default defaultTheme;

@@ -1,10 +1,11 @@
 import { css } from "styled-components";
 
-import colors from "../../themes/default/colors";
-import fontFamily from "../../themes/default/fontFamily";
-import fontSize from "../../themes/default/fontSize";
+import colors from "../../themes/default/tokens/colors";
+import fontFamily from "../../themes/default/tokens/fontFamily";
+import fontSize from "../../themes/default/tokens/fontSize";
+import spacing from "../../themes/default/tokens/spacing";
 
-const TextFieldTheme = {
+const textFieldTheme = {
   base: css`
     display: flex;
     flex-direction: column;
@@ -12,12 +13,12 @@ const TextFieldTheme = {
   input: css`
     background-color: ${colors.transparent};
     border: 1px solid ${colors.surface.c300};
-    border-radius: 3px;
+    border-radius: ${spacing(1)};
     color: ${colors.text.c500};
     font-family: ${fontFamily.primary};
     font-size: ${fontSize.body[0]};
     line-height: ${fontSize.body[1]};
-    padding: 4px 8px;
+    padding: ${spacing(1)} ${spacing(2)};
 
     &::placeholder {
       color: ${colors.text.c200};
@@ -35,8 +36,8 @@ const TextFieldTheme = {
   label: css`
     color: ${colors.text.c500};
     font-family: ${fontFamily.primary};
-    margin: 0 0 4px;
+    margin: ${spacing(0)} ${spacing(0)} ${spacing(1)};
   `,
 };
 
-export default TextFieldTheme;
+export default textFieldTheme;

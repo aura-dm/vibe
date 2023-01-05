@@ -1,17 +1,18 @@
 import { css } from "styled-components";
 
-import colors from "../../themes/default/colors";
-import fontFamily from "../../themes/default/fontFamily";
+import colors from "../../themes/default/tokens/colors";
+import fontFamily from "../../themes/default/tokens/fontFamily";
+import spacing from "../../themes/default/tokens/spacing";
 
-const ButtonTheme = {
+const buttonTheme = {
   base: css`
     background-color: ${colors.transparent};
     border: 1px solid ${colors.surface.c300};
-    border-radius: 3px;
+    border-radius: ${spacing(1)};
     color: ${colors.text.c400};
     cursor: pointer;
     font-family: ${fontFamily.primary};
-    padding: 8px 12px;
+    padding: ${spacing(2)} ${spacing(3)};
 
     &:hover {
       background-color: ${colors.surface.c100};
@@ -40,4 +41,4 @@ const ButtonTheme = {
   `,
 };
 
-export default ButtonTheme;
+export default buttonTheme;
