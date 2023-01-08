@@ -5,6 +5,9 @@ import VTextField from "./VTextField";
 export default {
   title: "Components/VTextField",
   component: VTextField,
+  argTypes: {
+    label: { control: "text" },
+  },
 } as ComponentMeta<typeof VTextField>;
 
 const Template: ComponentStory<typeof VTextField> = (args) => (
@@ -13,18 +16,10 @@ const Template: ComponentStory<typeof VTextField> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  onChange: (evt) => console.log(evt),
-};
-
-export const WithLabel = Template.bind({});
-WithLabel.args = {
   label: "Example input",
   labelId: "input-label",
-  onChange: (evt) => console.log(evt),
-};
-
-export const WithPlaceholder = Template.bind({});
-WithPlaceholder.args = {
+  name: "name",
   onChange: (evt) => console.log(evt),
   placeholder: "Start typing...",
+  type: "text",
 };

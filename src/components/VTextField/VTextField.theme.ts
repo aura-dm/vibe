@@ -15,9 +15,6 @@ const textFieldTheme = {
     border: 1px solid ${colors.surface.c300};
     border-radius: ${spacing(1)};
     color: ${colors.text.c500};
-    font-family: ${fontFamily.primary};
-    font-size: ${fontSize.body[0]};
-    line-height: ${fontSize.body[1]};
     padding: ${spacing(1)} ${spacing(2)};
 
     &::placeholder {
@@ -35,8 +32,6 @@ const textFieldTheme = {
   `,
   label: css`
     color: ${colors.text.c500};
-    font-family: ${fontFamily.primary};
-    margin: ${spacing(0)} ${spacing(0)} ${spacing(1)};
   `,
 };
 

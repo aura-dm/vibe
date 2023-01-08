@@ -24,14 +24,23 @@ const Template: ComponentStory<typeof VTypography> = (args) => (
     <VTypography component="h5" variant="h5">
       Heading 5
     </VTypography>
-    <VTypography component="p" variant="body">
-      Paragraph
+    <VTypography component="p" variant="body" style={{ margin: "0 0 12px" }}>
+      Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Quisque elementum pharetra felis fringilla finibus. Quisque scelerisque
+      libero eu quam tempus consectetur. Mauris nulla nulla, luctus quis enim
+      nec, vehicula tincidunt libero.
     </VTypography>
-    <VTypography component="p" variant="small">
-      Small
+    <VTypography component="p" variant="small" style={{ margin: "0 0 12px" }}>
+      Small - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+      elementum pharetra felis fringilla finibus. Quisque scelerisque libero eu
+      quam tempus consectetur. Mauris nulla nulla, luctus quis enim nec,
+      vehicula tincidunt libero.
     </VTypography>
     <VTypography component="p" variant="subtitle">
-      Subtitle
+      Subtitle - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Quisque elementum pharetra felis fringilla finibus. Quisque scelerisque
+      libero eu quam tempus consectetur. Mauris nulla nulla, luctus quis enim
+      nec, vehicula tincidunt libero.
     </VTypography>
   </div>
 );

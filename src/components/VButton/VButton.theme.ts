@@ -1,7 +1,6 @@
 import { css } from "styled-components";
 
 import colors from "../../themes/default/tokens/colors";
-import fontFamily from "../../themes/default/tokens/fontFamily";
 import spacing from "../../themes/default/tokens/spacing";
 
 const buttonTheme = {
@@ -11,8 +10,7 @@ const buttonTheme = {
     border-radius: ${spacing(1)};
     color: ${colors.text.c400};
     cursor: pointer;
-    font-family: ${fontFamily.primary};
-    padding: ${spacing(2)} ${spacing(3)};
+    padding: ${spacing(1)} ${spacing(4)};
 
     &:hover {
       background-color: ${colors.surface.c100};
@@ -34,7 +32,7 @@ const buttonTheme = {
       }
 
       &:focus {
-        box-shadow: 0 0 0 2px ${colors.primary.c400};
+        box-shadow: 0 0 0 2px ${colors.primary.c100};
         outline: none;
       }
     }

@@ -23,6 +23,10 @@ declare module "styled-components" {
       transparent: string;
     };
     components: {
+      alert: {
+        base: ThemedCssFunction;
+        icon: ThemedCssFunction;
+      };
       button: {
         base: ThemedCssFunction;
       };

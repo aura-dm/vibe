@@ -1,8 +1,17 @@
 const colors = {
+  error: {
+    c100: "#e9d5d5",
+  },
   primary: {
+    c100: "#f23fb3",
+    c200: "#e032a3",
+    c300: "#cf2694",
     c400: "#bf2188",
     c500: "#af187a",
     c600: "#931065",
+  },
+  success: {
+    c100: "#d1e2bb",
   },
   surface: {
     c50: "#ffffff",
@@ -32,7 +41,19 @@ const colors = {
     c400: "rgba(255, 255, 255, 0.85)",
     c500: "rgba(255, 255, 255, 1)",
   },
+  textError: {
+    c500: "#961616",
+  },
+  textSuccess: {
+    c500: "#47760a",
+  },
+  textWarning: {
+    c500: "#a06813",
+  },
   transparent: "transparent",
+  warning: {
+    c100: "#e0d2bb",
+  },
 };
 
 export default colors;

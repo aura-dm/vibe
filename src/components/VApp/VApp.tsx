@@ -12,8 +12,7 @@ interface Props {
 /**
  * App container that provides theming and other functionality
  */
-const VTypography = ({ children, theme = defaultTheme }: Props) => {
-  console.log(theme);
+const VApp = ({ children, theme = defaultTheme }: Props) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
@@ -22,4 +21,4 @@ const VTypography = ({ children, theme = defaultTheme }: Props) => {
   );
 };
 
-export default VTypography;
+export default VApp;
