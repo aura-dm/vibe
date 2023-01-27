@@ -30,6 +30,14 @@ declare module "styled-components" {
       button: {
         base: ThemedCssFunction;
       };
+      iconButton: {
+        base: ThemedCssFunction;
+      };
+      modal: {
+        base: ThemedCssFunction;
+        overlay: ThemedCssFunction;
+        panel: ThemedCssFunction;
+      };
       textField: {
         base: ThemedCssFunction;
         input: ThemedCssFunction;

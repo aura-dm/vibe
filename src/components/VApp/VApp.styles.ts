@@ -2,14 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-      all: unset;
-      display: revert;
+    all: unset;
+    display: revert;
   }
 
   *,
   *::before,
   *::after {
-      box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   html {
@@ -22,54 +22,54 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a, button {
-      cursor: revert;
+    cursor: revert;
   }
 
   ol, ul, menu {
-      list-style: none;
+    list-style: none;
   }
 
   img {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   table {
-      border-collapse: collapse;
+    border-collapse: collapse;
   }
 
   input, textarea {
-      -webkit-user-select: auto;
-      user-select: auto;
+    -webkit-user-select: auto;
+    user-select: auto;
   }
 
   textarea {
-      white-space: revert;
+    white-space: revert;
   }
 
   meter {
-      -webkit-appearance: revert;
-      appearance: revert;
+    -webkit-appearance: revert;
+    appearance: revert;
   }
 
   ::placeholder {
-      color: unset;
+    color: unset;
   }
 
   :where([hidden]) {
-      display: none;
+    display: none;
   }
 
   :where([contenteditable]:not([contenteditable="false"])) {
-      -moz-user-modify: read-write;
-      -webkit-user-modify: read-write;
-      overflow-wrap: break-word;
-      -webkit-line-break: after-white-space;
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
     line-break: after-white-space;
-      -webkit-user-select: auto;
+    -webkit-user-select: auto;
     user-select: auto;
   }
 
   :where([draggable="true"]) {
-      -webkit-user-drag: element;
+    -webkit-user-drag: element;
   }
 `;

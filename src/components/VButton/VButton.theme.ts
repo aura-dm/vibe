@@ -1,6 +1,7 @@
 import { css } from "styled-components";
 
 import colors from "../../themes/default/tokens/colors";
+import shadows from "../../themes/default/tokens/shadows";
 import spacing from "../../themes/default/tokens/spacing";
 
 const buttonTheme = {
@@ -16,8 +17,8 @@ const buttonTheme = {
       background-color: ${colors.surface.c100};
     }
 
-    &:focus {
-      box-shadow: 0 0 0 2px ${colors.surface.c200};
+    &:focus-visible {
+      ${shadows.input.focus}
       outline: none;
     }
 

@@ -1,11 +1,13 @@
-import { ReactNode } from "react";
+import { ReactNode, useMemo } from "react";
 import { DefaultTheme, ThemeProvider } from "styled-components";
 
 import defaultTheme from "../../themes/default/defaultTheme";
 import { GlobalStyles } from "./VApp.styles";
+import AppProvider from "./stores/AppStore/AppProvider";
 
 interface Props {
   children: ReactNode;
+  portalId?: string;
   theme?: DefaultTheme;
 }
 
@@ -15,8 +17,10 @@ interface Props {
 const VApp = ({ children, theme = defaultTheme }: Props) => {
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      {children}
+      <AppProvider>
+        <GlobalStyles />
+        {children}
+      </AppProvider>
     </ThemeProvider>
   );
 };

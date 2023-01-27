@@ -2,6 +2,8 @@ import { DefaultTheme } from "styled-components";
 
 import alertTheme from "../../components/VAlert/VAlert.theme";
 import buttonTheme from "../../components/VButton/VButton.theme";
+import iconButtonTheme from "../../components/VIconButton/VIconButton.theme";
+import modalTheme from "../../components/VModal/VModal.theme";
 import textFieldTheme from "../../components/VTextField/VTextField.theme";
 import toolbarTheme from "../../components/VToolbar/VToolbar.theme";
 import typographyTheme from "../../components/VTypography/VTypography.theme";
@@ -15,6 +17,8 @@ const defaultTheme: DefaultTheme = {
   components: {
     alert: alertTheme,
     button: buttonTheme,
+    iconButton: iconButtonTheme,
+    modal: modalTheme,
     textField: textFieldTheme,
     toolbar: toolbarTheme,
     typography: typographyTheme,

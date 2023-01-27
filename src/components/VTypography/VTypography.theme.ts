@@ -22,7 +22,7 @@ const typographyTheme = {
     &.h5 {
       font-family: ${fontFamily.primary};
       font-weight: ${fontWeight.normal};
-      margin: ${spacing(6)} 0 ${spacing(4)};
+      margin: 0 0 ${spacing(4)};
     }
 
     &.h1 {
