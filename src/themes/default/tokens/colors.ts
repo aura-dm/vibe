@@ -1,12 +1,13 @@
 const colors = {
+  current: "currentcolor",
   error: {
     c100: "#e9d5d5",
   },
   primary: {
-    c100: "#f23fb3",
-    c200: "#e032a3",
-    c300: "#cf2694",
-    c400: "#bf2188",
+    c100: "#ffecf8",
+    c200: "#ebb7d9",
+    c300: "#d782b9",
+    c400: "#c34d9a",
     c500: "#af187a",
     c600: "#931065",
   },

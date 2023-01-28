@@ -10,7 +10,7 @@ interface Props {
 const VModalTitle = ({ children }: Props) => {
   return (
     <Dialog.Title>
-      <VTypography component="h2" style={{ margin: 0 }} variant="h4">
+      <VTypography component="span" style={{ margin: 0 }} variant="h4">
         {children}
       </VTypography>
     </Dialog.Title>

@@ -1,12 +1,5 @@
 import { css } from "styled-components";
 
-import colors from "../../themes/default/tokens/colors";
-import fontFamily from "../../themes/default/tokens/fontFamily";
-import fontSize from "../../themes/default/tokens/fontSize";
-import fontWeight from "../../themes/default/tokens/fontWeight";
-import shadows from "../../themes/default/tokens/shadows";
-import spacing from "../../themes/default/tokens/spacing";
-
 const modalTheme = {
   base: css`
     align-items: center;
@@ -14,7 +7,7 @@ const modalTheme = {
     justify-content: center;
     left: 0;
     height: 100%;
-    padding: ${spacing(6)};
+    padding: ${({ theme }) => theme.spacing[6]};
     position: fixed;
     top: 0;
     width: 100%;
@@ -29,8 +22,8 @@ const modalTheme = {
     width: 100%;
   `,
   panel: css`
-    background-color: #ffffff;
-    ${shadows.modal.xl}
+    background-color: ${({ theme }) => theme.colors.surface.c50};
+    ${({ theme }) => theme.shadows.modal.xl}
     height: 100%;
     width: 100%;
   `,

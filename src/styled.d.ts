@@ -3,10 +3,20 @@ import "styled-components";
 declare module "styled-components" {
   export interface DefaultTheme {
     colors: {
+      current: string;
+      error: {
+        c100: string;
+      };
       primary: {
+        c100: string;
+        c200: string;
+        c300: string;
         c400: string;
         c500: string;
         c600: string;
+      };
+      success: {
+        c100: string;
       };
       surface: {
         c50: string;
@@ -20,7 +30,35 @@ declare module "styled-components" {
         c800: string;
         c900: string;
       };
+      text: {
+        c50: string;
+        c100: string;
+        c200: string;
+        c300: string;
+        c400: string;
+        c500: string;
+      };
+      textAlt: {
+        c50: string;
+        c100: string;
+        c200: string;
+        c300: string;
+        c400: string;
+        c500: string;
+      };
+      textError: {
+        c500: string;
+      };
+      textSuccess: {
+        c500: string;
+      };
+      textWarning: {
+        c500: string;
+      };
       transparent: string;
+      warning: {
+        c100: string;
+      };
     };
     components: {
       alert: {
@@ -64,6 +102,22 @@ declare module "styled-components" {
       small: string[];
       subtitle: string[];
     };
-    spacing: (value: number) => string;
+    fontWeight: {
+      normal: number;
+      medium: number;
+      bold: number;
+    };
+    shadows: {
+      input: {
+        focus: string;
+      };
+      modal: {
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+      };
+    };
+    spacing: string[];
   }
 }

@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
 interface Props {
-  height?: string;
   /**
    * SVG child elements (\<circle\>, \<path\>, etc)
    */
   children: ReactNode;
+  height?: string;
   width?: string;
 }
 
@@ -15,7 +15,6 @@ interface Props {
 const VSvgIcon = ({ children, height = "24px", width = "24px" }: Props) => {
   return (
     <svg
-      fill="none"
       height={height}
       viewBox="0 0 24 24"
       width={width}

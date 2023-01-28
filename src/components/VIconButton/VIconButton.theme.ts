@@ -1,26 +1,23 @@
 import { css } from "styled-components";
 
-import colors from "../../themes/default/tokens/colors";
-import spacing from "../../themes/default/tokens/spacing";
-
 const iconButtonTheme = {
   base: css`
     align-items: center;
-    background-color: ${colors.transparent};
+    background-color: ${({ theme }) => theme.colors.transparent};
     border-radius: 100%;
-    color: ${colors.text.c400};
+    color: ${({ theme }) => theme.colors.text.c400};
     cursor: pointer;
     display: flex;
-    height: ${spacing(9)};
+    height: ${({ theme }) => theme.spacing[9]};
     justify-content: center;
-    width: ${spacing(9)};
+    width: ${({ theme }) => theme.spacing[9]};
 
     &:hover {
-      background-color: ${colors.surface.c100};
+      background-color: ${({ theme }) => theme.colors.surface.c100};
     }
 
     &:focus-visible {
-      box-shadow: 0 0 0 2px ${colors.surface.c200};
+      box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.surface.c200};
       outline: none;
     }
   `,

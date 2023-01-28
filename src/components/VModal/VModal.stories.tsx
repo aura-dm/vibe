@@ -11,6 +11,7 @@ export default {
 
 const Template: ComponentStory<typeof VModal> = (args) => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div style={{ height: "400px" }}>
       <VButton onClick={() => setIsOpen(true)}>Open modal</VButton>
@@ -19,6 +20,7 @@ const Template: ComponentStory<typeof VModal> = (args) => {
           <VModal.Title>Modal example</VModal.Title>
           <VModal.CloseButton onClick={() => setIsOpen(false)} />
         </VModal.Header>
+        <VModal.Content>Modal content</VModal.Content>
       </VModal>
     </div>
   );

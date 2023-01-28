@@ -10,6 +10,8 @@ import typographyTheme from "../../components/VTypography/VTypography.theme";
 import colors from "./tokens/colors";
 import fontFamily from "./tokens/fontFamily";
 import fontSize from "./tokens/fontSize";
+import fontWeight from "./tokens/fontWeight";
+import shadows from "./tokens/shadows";
 import spacing from "./tokens/spacing";
 
 const defaultTheme: DefaultTheme = {
@@ -25,6 +27,8 @@ const defaultTheme: DefaultTheme = {
   },
   fontFamily,
   fontSize,
+  fontWeight,
+  shadows,
   spacing,
 };
 

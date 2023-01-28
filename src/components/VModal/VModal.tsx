@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 
 import { Base, Overlay, Panel } from "./VModal.styles";
 import VModalCloseButton from "./components/VModalCloseButton";
+import VModalContent from "./components/VModalContent";
 import VModalHeader from "./components/VModalHeader";
 import VModalTitle from "./components/VModalTitle";
 
@@ -71,6 +72,7 @@ const ModalRoot = ({
 // add child elements
 const VModal = Object.assign(ModalRoot, {
   CloseButton: VModalCloseButton,
+  Content: VModalContent,
   Header: VModalHeader,
   Title: VModalTitle,
 });

@@ -1,34 +1,33 @@
 import { css } from "styled-components";
 
-import colors from "../../themes/default/tokens/colors";
-import spacing from "../../themes/default/tokens/spacing";
-
 const alertTheme = {
   base: css`
     align-items: center;
     display: flex;
-    gap: ${spacing(3)};
-    line-height: 1.2rem;
-    padding: ${spacing(3)} ${spacing(4)};
+    font-family: ${({ theme }) => theme.fontSize.body};
+    gap: ${({ theme }) => theme.spacing[3]};
+    padding: ${({ theme }) => `${theme.spacing[3]} ${theme.spacing[4]}`};
 
     &.error {
-      border: 1px solid ${colors.error.c100};
-      color: ${colors.textError.c500};
+      border: 1px solid ${({ theme }) => theme.colors.error.c100};
+      color: ${({ theme }) => theme.colors.textError.c500};
+      fill: ${({ theme }) => theme.colors.textError.c500};
     }
 
     &.info {
-      border: 1px solid #dbb4cd;
-      color: #af187a;
+      border: 1px solid ${({ theme }) => theme.colors.primary.c200};
+      color: ${({ theme }) => theme.colors.primary.c600};
+      fill: ${({ theme }) => theme.colors.primary.c400};
     }
 
     &.success {
-      border: 1px solid ${colors.success.c100};
-      color: ${colors.textSuccess.c500};
+      border: 1px solid ${({ theme }) => theme.colors.success.c100};
+      color: ${({ theme }) => theme.colors.textSuccess.c500};
     }
 
     &.warning {
-      border: 1px solid ${colors.warning.c100};
-      color: ${colors.textWarning.c500};
+      border: 1px solid ${({ theme }) => theme.colors.warning.c100};
+      color: ${({ theme }) => theme.colors.textWarning.c500};
     }
   `,
   icon: css`

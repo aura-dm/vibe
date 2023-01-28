@@ -5,6 +5,9 @@ import VButton from "./VButton";
 export default {
   title: "Components/VButton",
   component: VButton,
+  argTypes: {
+    variant: { control: "select" },
+  },
 } as ComponentMeta<typeof VButton>;
 
 const Template: ComponentStory<typeof VButton> = (args) => (
@@ -15,9 +18,5 @@ export const Primary = Template.bind({});
 Primary.args = {
   children: "Button",
   isPrimary: true,
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  children: "Button",
+  variant: "contained",
 };

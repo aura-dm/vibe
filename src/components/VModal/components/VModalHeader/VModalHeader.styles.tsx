@@ -4,6 +4,6 @@ export const Base = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 24px;
+  padding: ${({ theme }) => theme.spacing[6]};
   width: 100%;
 `;

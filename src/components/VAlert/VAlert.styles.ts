@@ -9,6 +9,6 @@ export const Base = styled(VTypography).attrs({
   ${({ theme }) => theme.components.alert.base};
 `;
 
-export const Icon = styled.div`
+export const Icon = styled.span`
   ${({ theme }) => theme.components.alert.icon};
 `;
