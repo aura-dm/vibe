@@ -47,12 +47,15 @@ declare module "styled-components" {
         c500: string;
       };
       textError: {
+        c400: string;
         c500: string;
       };
       textSuccess: {
+        c400: string;
         c500: string;
       };
       textWarning: {
+        c400: string;
         c500: string;
       };
       transparent: string;

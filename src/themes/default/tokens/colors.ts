@@ -43,12 +43,15 @@ const colors = {
     c500: "rgba(255, 255, 255, 1)",
   },
   textError: {
+    c400: "#b82020",
     c500: "#961616",
   },
   textSuccess: {
+    c400: "#58920c",
     c500: "#47760a",
   },
   textWarning: {
+    c400: "#b87816",
     c500: "#a06813",
   },
   transparent: "transparent",

@@ -23,11 +23,13 @@ const alertTheme = {
     &.success {
       border: 1px solid ${({ theme }) => theme.colors.success.c100};
       color: ${({ theme }) => theme.colors.textSuccess.c500};
+      fill: ${({ theme }) => theme.colors.textSuccess.c400};
     }
 
     &.warning {
       border: 1px solid ${({ theme }) => theme.colors.warning.c100};
       color: ${({ theme }) => theme.colors.textWarning.c500};
+      fill: ${({ theme }) => theme.colors.textWarning.c400};
     }
   `,
   icon: css`
