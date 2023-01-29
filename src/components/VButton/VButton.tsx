@@ -5,9 +5,9 @@ import { Base } from "./VButton.styles";
 interface Props {
   children: ReactNode;
   /**
-   * Is this the principal call to action on the page?
+   * Optional disable button
    */
-  isPrimary?: boolean;
+  disabled?: boolean;
   /**
    * Optional click handler
    */
@@ -15,7 +15,7 @@ interface Props {
   /**
    * Style of button
    */
-  variant?: "contained" | "outlined" | "text";
+  variant?: "primary" | "secondary" | "tertiary";
   [x: string]: any;
 }
 
@@ -24,17 +24,13 @@ interface Props {
  */
 const VButton = ({
   children,
-  isPrimary,
+  disabled = false,
   onClick,
-  variant = "contained",
+  variant = "secondary",
   ...rest
 }: Props) => {
   return (
-    <Base
-      className={[isPrimary ? "is_primary" : undefined, variant].join(" ")}
-      onClick={onClick}
-      {...rest}
-    >
+    <Base className={variant} disabled={disabled} onClick={onClick} {...rest}>
       {children}
     </Base>
   );

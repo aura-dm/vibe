@@ -14,9 +14,10 @@ const Template: ComponentStory<typeof VButton> = (args) => (
   <VButton {...args} />
 );
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Overview = Template.bind({});
+Overview.args = {
   children: "Button",
-  isPrimary: true,
-  variant: "contained",
+  disabled: false,
+  onClick: () => alert("Clicked"),
+  variant: "secondary",
 };

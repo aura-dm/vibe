@@ -10,18 +10,18 @@ const textFieldTheme = {
     border: 1px solid ${({ theme }) => theme.colors.surface.c300};
     border-radius: ${({ theme }) => theme.spacing[1]};
     color: ${({ theme }) => theme.colors.text.c500};
-    padding: ${({ theme }) => `${theme.spacing[1]} ${theme.spacing[2]}`};
+    padding: ${({ theme }) => `${theme.spacing[2]} ${theme.spacing[3]}`};
 
     &::placeholder {
-      color: ${({ theme }) => theme.colors.text.c200};
+      color: ${({ theme }) => theme.colors.text.c100};
     }
 
     &:hover {
       border: 1px solid ${({ theme }) => theme.colors.surface.c300};
     }
 
-    &:focus {
-      box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.surface.c200};
+    &:focus-visible {
+      ${({ theme }) => theme.shadows.input.focus}
       outline: none;
     }
   `,
