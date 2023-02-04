@@ -74,6 +74,12 @@ declare module "styled-components" {
       iconButton: {
         base: ThemedCssFunction;
       };
+      image: {
+        base: ThemedCssFunction;
+      };
+      loading: {
+        base: ThemedCssFunction;
+      };
       modal: {
         base: ThemedCssFunction;
         overlay: ThemedCssFunction;
