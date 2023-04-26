@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 import VTypography from "../../../../dataDisplay/VTypography";
 
-interface Props {
+export interface Props {
   children: ReactNode;
 }
 

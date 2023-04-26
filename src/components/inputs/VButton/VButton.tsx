@@ -7,6 +7,7 @@ interface Props {
   /**
    * Optional disable button
    */
+  className?: string;
   disabled?: boolean;
   /**
    * Optional click handler
@@ -24,13 +25,19 @@ interface Props {
  */
 const VButton = ({
   children,
+  className,
   disabled = false,
   onClick,
   variant = "secondary",
   ...rest
 }: Props) => {
   return (
-    <Base className={variant} disabled={disabled} onClick={onClick} {...rest}>
+    <Base
+      className={[className, variant].join(" ")}
+      disabled={disabled}
+      onClick={onClick}
+      {...rest}
+    >
       {children}
     </Base>
   );

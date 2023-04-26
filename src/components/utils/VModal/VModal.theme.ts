@@ -22,7 +22,7 @@ const modalTheme = {
     width: 100%;
   `,
   panel: css`
-    background-color: ${({ theme }) => theme.colors.surface.c50};
+    background-color: ${({ theme }) => theme.colors.neutral.c50};
     ${({ theme }) => theme.shadows.modal.xl}
     height: 100%;
     width: 100%;

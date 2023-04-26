@@ -10,26 +10,26 @@ const alertTheme = {
 
     &.error {
       border: 1px solid ${({ theme }) => theme.colors.error.c100};
-      color: ${({ theme }) => theme.colors.textError.c500};
-      fill: ${({ theme }) => theme.colors.textError.c500};
+      color: ${({ theme }) => theme.colors.error.c500};
+      fill: ${({ theme }) => theme.colors.error.c500};
     }
 
     &.info {
-      border: 1px solid ${({ theme }) => theme.colors.primary.c200};
-      color: ${({ theme }) => theme.colors.primary.c600};
-      fill: ${({ theme }) => theme.colors.primary.c400};
+      border: 1px solid ${({ theme }) => theme.colors.info.c100};
+      color: ${({ theme }) => theme.colors.info.c500};
+      fill: ${({ theme }) => theme.colors.info.c400};
     }
 
     &.success {
       border: 1px solid ${({ theme }) => theme.colors.success.c100};
-      color: ${({ theme }) => theme.colors.textSuccess.c500};
-      fill: ${({ theme }) => theme.colors.textSuccess.c400};
+      color: ${({ theme }) => theme.colors.success.c500};
+      fill: ${({ theme }) => theme.colors.success.c400};
     }
 
     &.warning {
-      border: 1px solid ${({ theme }) => theme.colors.warning.c100};
-      color: ${({ theme }) => theme.colors.textWarning.c500};
-      fill: ${({ theme }) => theme.colors.textWarning.c400};
+      border: 1px solid ${({ theme }) => theme.colors.warning.c200};
+      color: ${({ theme }) => theme.colors.warning.c500};
+      fill: ${({ theme }) => theme.colors.warning.c500};
     }
   `,
   icon: css`

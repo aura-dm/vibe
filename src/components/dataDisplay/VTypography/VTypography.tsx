@@ -14,6 +14,7 @@ export type TypographyVariants =
 
 export interface Props {
   children: ReactNode;
+  className?: string;
   component?: string | ComponentType<any> | undefined;
   variant?: TypographyVariants;
   [x: string]: any;
@@ -24,12 +25,13 @@ export interface Props {
  */
 const VTypography = ({
   children,
+  className,
   component = "p",
   variant = "body",
   ...rest
 }: Props) => {
   return (
-    <Base as={component} className={variant} {...rest}>
+    <Base as={component} className={[className, variant].join(" ")} {...rest}>
       {children}
     </Base>
   );

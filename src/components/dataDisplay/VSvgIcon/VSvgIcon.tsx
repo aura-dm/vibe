@@ -5,6 +5,7 @@ interface Props {
    * SVG child elements (\<circle\>, \<path\>, etc)
    */
   children: ReactNode;
+  className?: string;
   height?: string;
   width?: string;
 }

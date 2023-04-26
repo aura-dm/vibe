@@ -5,11 +5,11 @@ const buttonTheme = {
     background-color: ${({ theme }) => theme.colors.transparent};
     border: 1px solid ${({ theme }) => theme.colors.transparent};
     border-radius: ${({ theme }) => theme.spacing[0]};
-    color: ${({ theme }) => theme.colors.text.c500};
-    padding: ${({ theme }) => `${theme.spacing[1]} ${theme.spacing[4]}`};
+    color: ${({ theme }) => theme.colors.neutral.c700};
+    padding: ${({ theme }) => `${theme.spacing[2]} ${theme.spacing[4]}`};
 
     &:hover {
-      background-color: ${({ theme }) => theme.colors.surface.c100};
+      background-color: ${({ theme }) => theme.colors.neutral.c100};
     }
 
     &:focus-visible {
@@ -17,13 +17,13 @@ const buttonTheme = {
     }
 
     &:disabled {
-      color: ${({ theme }) => theme.colors.text.c100};
+      color: ${({ theme }) => theme.colors.neutral.c900};
     }
 
     &.primary {
       background-color: ${({ theme }) => theme.colors.primary.c500};
       border: 1px solid ${({ theme }) => theme.colors.primary.c500};
-      color: ${({ theme }) => theme.colors.textAlt.c500};
+      color: ${({ theme }) => theme.colors.neutral.c50};
 
       &:hover {
         background-color: ${({ theme }) => theme.colors.primary.c600};
@@ -38,27 +38,27 @@ const buttonTheme = {
       &:disabled {
         background-color: ${({ theme }) => theme.colors.primary.c300};
         border: 1px solid ${({ theme }) => theme.colors.primary.c300};
-        color: ${({ theme }) => theme.colors.textAlt.c500};
+        color: ${({ theme }) => theme.colors.neutral.c50};
       }
     }
 
     &.secondary {
-      border: 1px solid ${({ theme }) => theme.colors.surface.c500};
-      color: ${({ theme }) => theme.colors.text.c400};
+      border: 1px solid ${({ theme }) => theme.colors.neutral.c200};
+      color: ${({ theme }) => theme.colors.neutral.c700};
 
       &:hover {
-        background-color: ${({ theme }) => theme.colors.surface.c100};
-        color: ${({ theme }) => theme.colors.text.c500};
+        background-color: ${({ theme }) => theme.colors.neutral.c100};
+        color: ${({ theme }) => theme.colors.neutral.c700};
       }
 
       &:focus-visible {
-        box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.surface.c200};
+        box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.neutral.c200};
         outline: none;
       }
 
       &:disabled {
-        border: 1px solid ${({ theme }) => theme.colors.surface.c300};
-        color: ${({ theme }) => theme.colors.text.c100};
+        border: 1px solid ${({ theme }) => theme.colors.neutral.c300};
+        color: ${({ theme }) => theme.colors.neutral.c500};
       }
     }
   `,

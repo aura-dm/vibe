@@ -2,7 +2,7 @@ import { css } from "styled-components";
 
 const typographyTheme = {
   base: css`
-    color: ${({ theme }) => theme.colors.text.c500};
+    color: ${({ theme }) => theme.colors.neutral.c900};
     font-family: ${({ theme }) => theme.fontFamily.secondary};
     font-size: ${({ theme }) => theme.fontSize.body[0]};
     font-weight: ${({ theme }) => theme.fontWeight.normal};

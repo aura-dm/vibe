@@ -1,9 +1,11 @@
 export { default as VAlert } from "./components/feedback/VAlert";
 export { default as VApp } from "./components/utils/VApp";
-export { default as VBox } from "./components/layout/VBox";
 export { default as VButton } from "./components/inputs/VButton";
 export { default as VIconButton } from "./components/inputs/VIconButton";
 export { default as VImage } from "./components/dataDisplay/VImage";
+export { default as VLoading } from "./components/feedback/VLoading";
+export { default as VLoadingScreen } from "./components/feedback/VLoadingScreen";
+export { default as VModal } from "./components/utils/VModal";
 export { default as VSvgIcon } from "./components/dataDisplay/VSvgIcon";
 export { default as VTextField } from "./components/inputs/VTextField";
 export { default as VToolbar } from "./components/layout/VToolbar";

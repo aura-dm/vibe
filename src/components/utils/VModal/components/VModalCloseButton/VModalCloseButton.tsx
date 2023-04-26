@@ -1,7 +1,7 @@
 import VCloseIcon from "../../../../dataDisplay/icons/VCloseIcon";
 import VIconButton from "../../../../inputs/VIconButton";
 
-interface Props {
+export interface Props {
   onClick: () => void;
 }
 

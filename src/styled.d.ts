@@ -6,19 +6,23 @@ declare module "styled-components" {
       current: string;
       error: {
         c100: string;
+        c200: string;
+        c300: string;
+        c400: string;
+        c500: string;
+        c600: string;
+        c700: string;
       };
-      primary: {
+      info: {
         c100: string;
         c200: string;
         c300: string;
         c400: string;
         c500: string;
         c600: string;
+        c700: string;
       };
-      success: {
-        c100: string;
-      };
-      surface: {
+      neutral: {
         c50: string;
         c100: string;
         c200: string;
@@ -30,37 +34,33 @@ declare module "styled-components" {
         c800: string;
         c900: string;
       };
-      text: {
-        c50: string;
+      primary: {
         c100: string;
         c200: string;
         c300: string;
         c400: string;
         c500: string;
+        c600: string;
+        c700: string;
       };
-      textAlt: {
-        c50: string;
+      success: {
         c100: string;
         c200: string;
         c300: string;
         c400: string;
         c500: string;
-      };
-      textError: {
-        c400: string;
-        c500: string;
-      };
-      textSuccess: {
-        c400: string;
-        c500: string;
-      };
-      textWarning: {
-        c400: string;
-        c500: string;
+        c600: string;
+        c700: string;
       };
       transparent: string;
       warning: {
         c100: string;
+        c200: string;
+        c300: string;
+        c400: string;
+        c500: string;
+        c600: string;
+        c700: string;
       };
     };
     components: {

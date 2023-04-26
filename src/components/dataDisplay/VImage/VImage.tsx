@@ -7,6 +7,7 @@ import { Base, Container, Img } from "./VImage.styles";
 
 interface Props {
   alt?: string;
+  className?: string;
   fit?: "contain" | "cover";
   height?: string;
   url: string;

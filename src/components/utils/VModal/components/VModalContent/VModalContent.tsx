@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 import { Base } from "./VModalContent.styles";
 
-interface Props {
+export interface Props {
   children: ReactNode;
 }
 

@@ -8,15 +8,16 @@ import { Base, Icon } from "./VAlert.styles";
 
 interface Props {
   children: ReactNode;
+  className?: string;
   type?: "error" | "info" | "success" | "warning";
 }
 
 /**
  * An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
  */
-const VAlert = ({ children, type }: Props) => {
+const VAlert = ({ children, className, type }: Props) => {
   return (
-    <Base className={type}>
+    <Base className={[className, type].join(" ")}>
       <Icon>
         {type === "error" && <VErrorIcon height="20px" width="20px" />}
         {type === "info" && <VInfoIcon height="20px" width="20px" />}

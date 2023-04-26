@@ -2,7 +2,7 @@ import colors from "./colors";
 
 const shadows = {
   input: {
-    focus: `box-shadow: 0 0 0 2px ${colors.surface.c200};`,
+    focus: `box-shadow: 0 0 0 2px ${colors.neutral.c200};`,
   },
   modal: {
     sm: `filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));`,

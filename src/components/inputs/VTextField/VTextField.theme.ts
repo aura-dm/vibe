@@ -7,17 +7,17 @@ const textFieldTheme = {
   `,
   input: css`
     background-color: ${({ theme }) => theme.colors.transparent};
-    border: 1px solid ${({ theme }) => theme.colors.surface.c300};
+    border: 1px solid ${({ theme }) => theme.colors.neutral.c300};
     border-radius: ${({ theme }) => theme.spacing[1]};
-    color: ${({ theme }) => theme.colors.text.c500};
+    color: ${({ theme }) => theme.colors.neutral.c900};
     padding: ${({ theme }) => `${theme.spacing[2]} ${theme.spacing[3]}`};
 
     &::placeholder {
-      color: ${({ theme }) => theme.colors.text.c100};
+      color: ${({ theme }) => theme.colors.neutral.c700};
     }
 
     &:hover {
-      border: 1px solid ${({ theme }) => theme.colors.surface.c300};
+      border: 1px solid ${({ theme }) => theme.colors.neutral.c300};
     }
 
     &:focus-visible {
@@ -26,7 +26,7 @@ const textFieldTheme = {
     }
   `,
   label: css`
-    color: ${({ theme }) => theme.colors.text.c500};
+    color: ${({ theme }) => theme.colors.neutral.c900};
   `,
 };
 
